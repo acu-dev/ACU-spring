@@ -12,17 +12,11 @@
 					<target>1.5</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<artifactId>maven-release-plugin</artifactId>
-				<configuration>
-					<tagBase>https://source.acu.edu/svn/spring/tags</tagBase>
-				</configuration>
-			</plugin>
 		</plugins>
 	</build>
 	<scm>
-		<connection>scm:svn:https://source.acu.edu/svn/spring/trunk</connection>
-		<developerConnection>scm:svn:https://source.acu.edu/svn/spring/trunk</developerConnection>
+		<connection>scm:git:file://${basedir}</connection>
+		<developerConnection>scm:git:file://${basedir}</developerConnection>
 	</scm>
 	<distributionManagement>
 		<repository>
